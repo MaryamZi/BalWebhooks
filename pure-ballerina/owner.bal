@@ -9,6 +9,8 @@ function main(string[] args) {
     http:OutRequest regRequest = {};
     regRequest.setJsonPayload({url:"9091/vehicleRegWebhook/listener"});
     resp, _ = vehicleRegEndpoint.post("/registerWebhook", regRequest);
+    regRequest.setJsonPayload({url:"9091/vehicleRegWebhookInvalid/listener"});
+    resp, _ = vehicleRegEndpoint.post("/registerWebhook", regRequest);
 
     string vehicleNumber = "0123";
     http:OutRequest req = {};
