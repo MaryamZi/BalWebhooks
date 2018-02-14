@@ -15,3 +15,4 @@ was added for
 4. [pure-ballerina](pure-ballerina) - this sample looks at a pure Ballerina usecase where the "webhook" is registered 
 for a Ballerina service, and the "webhook listener" is also a Ballerina service
 
+5. [websub](websub) - this sample looks at a WebSub subscription/subscriber in Ballerina
