@@ -1,7 +1,14 @@
 1. Run the program
+- Without a secret
 ```cmd
 $ ballerina run github-webhook.bal
 ballerina: deploying service(s) in 'github-webhook.bal'
+ballerina: started HTTP/WS server connector 0.0.0.0:9090
+```
+- With a secret
+```cmd
+$ ballerina run github-webhook-with-secret.bal
+ballerina: deploying service(s) in 'github-webhook-with-secret.bal'
 ballerina: started HTTP/WS server connector 0.0.0.0:9090
 ```
 
@@ -21,6 +28,7 @@ $ ./ngrok http 9090
     
     iii. Select “Which events would you like to trigger this webhook?”
      * For example select “Let me select individual events.”
+     * If testing the webhook with the secret, specify "aqwsdfertg1248sjn" as the secret
      * Select “Issues” and “Issue Comments”
      * Tick “Active” to mark the webhook as active
      * Add webhook
